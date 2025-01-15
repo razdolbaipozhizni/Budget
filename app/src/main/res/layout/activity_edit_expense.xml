@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Название расхода -->
+    <EditText
+        android:id="@+id/edit_expense_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Название расхода"
+        android:inputType="text"
+        android:padding="8dp" />
+
+    <!-- Сумма расхода -->
+    <EditText
+        android:id="@+id/edit_expense_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Сумма расхода"
+        android:inputType="numberDecimal"
+        android:padding="8dp" />
+
+    <!-- Кнопка для сохранения изменений -->
+    <Button
+        android:id="@+id/btn_save_expense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Сохранить изменения"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:layout_marginTop="16dp" />
+</LinearLayout>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Заголовок -->
+        <TextView
+            android:id="@+id/text_analysis_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Анализ доходов и расходов"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:paddingBottom="16dp" />
+
+        <!-- Сумма всех доходов -->
+        <TextView
+            android:id="@+id/text_total_income"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Общая сумма доходов: 0.00 ₽"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@id/text_analysis_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:paddingBottom="8dp" />
+
+        <!-- Сумма всех расходов -->
+        <TextView
+            android:id="@+id/text_total_expense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Общая сумма расходов: 0.00 ₽"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@id/text_total_income"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:paddingBottom="8dp" />
+
+        <!-- Остаток средств -->
+        <TextView
+            android:id="@+id/text_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Остаток средств: 0.00 ₽"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@id/text_total_expense"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:paddingBottom="16dp" />
+
+        <!-- Разделитель -->
+        <View
+            android:id="@+id/divider_top"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintTop_toBottomOf="@id/text_balance"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Блок доходов -->
+        <TextView
+            android:id="@+id/text_incomes_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Доходы"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/divider_top"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:paddingBottom="8dp" />
+
+        <com.example.myapplication.PieChartView
+            android:id="@+id/pie_chart_incomes"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:layout_constraintTop_toBottomOf="@id/text_incomes_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:paddingBottom="16dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_incomes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"
+            app:layout_constraintTop_toBottomOf="@id/pie_chart_incomes"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:paddingBottom="16dp" />
+
+        <!-- Разделитель -->
+        <View
+            android:id="@+id/divider_middle"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintTop_toBottomOf="@id/recycler_incomes"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Блок расходов -->
+        <TextView
+            android:id="@+id/text_expenses_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Расходы"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/divider_middle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:paddingBottom="8dp" />
+
+        <com.example.myapplication.PieChartView
+            android:id="@+id/pie_chart_expenses"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:layout_constraintTop_toBottomOf="@id/text_expenses_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:paddingBottom="16dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_expenses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"
+            app:layout_constraintTop_toBottomOf="@id/pie_chart_expenses"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

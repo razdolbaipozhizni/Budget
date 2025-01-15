@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:background="?attr/selectableItemBackground">
+
+    <!-- Название расхода -->
+
+    <!-- Сумма расхода -->
+    <TextView
+        android:id="@+id/text_expense_name"
+        android:layout_width="101dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingEnd="8dp"
+        android:text="Название"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/text_expense_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingEnd="16dp"
+        android:text="₽"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_edit_expense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Редактировать"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:textColor="@android:color/white"
+        android:padding="4dp" />
+    <!-- Кнопка удаления -->
+    <Button
+        android:id="@+id/btn_delete_expense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Удалить"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:textColor="@android:color/white"
+        android:padding="4dp" />
+
+</LinearLayout>

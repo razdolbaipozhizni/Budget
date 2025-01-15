@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Заголовок остатка -->
+    <TextView
+        android:id="@+id/text_total_income"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Остаток: 0.00 ₽"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="16dp" />
+
+    <!-- Поля для ввода новой записи -->
+    <EditText
+        android:id="@+id/edit_expense_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Название расхода"
+        android:inputType="text"
+        android:padding="8dp" />
+
+    <EditText
+        android:id="@+id/edit_expense_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Сумма"
+        android:inputType="numberDecimal"
+        android:padding="8dp" />
+
+    <!-- Кнопка для добавления расхода -->
+    <Button
+        android:id="@+id/btn_add_expense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Добавить расход"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="16dp" />
+
+    <!-- Список расходов -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_expense_history"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

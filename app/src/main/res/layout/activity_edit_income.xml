@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Название дохода -->
+    <EditText
+        android:id="@+id/edit_income_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Название дохода"
+        android:inputType="text"
+        android:padding="8dp" />
+
+    <!-- Сумма дохода -->
+    <EditText
+        android:id="@+id/edit_income_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Сумма дохода"
+        android:inputType="numberDecimal"
+        android:padding="8dp" />
+
+    <!-- Кнопка для сохранения изменений -->
+    <Button
+        android:id="@+id/btn_save_income"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Сохранить изменения"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:layout_marginTop="16dp" />
+</LinearLayout>
