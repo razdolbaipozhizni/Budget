@@ -13,7 +13,11 @@
 ### 2. Анализ и отчеты
 - **Динамика расходов**: Отслеживайте динамику своих расходов за различные периоды времени и сравнивайте их между собой.
 - **Полная картина**: Получите полное представление о своем финансовом положении, что поможет вам принимать обоснованные решения о том, где можно сэкономить, куда лучше вложить деньги или как накопить на крупные покупки.
-https://github.com/razdolbaipozhizni/Budget/blob/c1295f3b28d8288b9a318de0f0cc5e543480539b/%D0%9F%D1%80%D0%B5%D0%B7%D0%B5%D0%BD%D1%82%D0%B0%D1%86%D0%B8%D1%8F%20.mp4
-![Screenshot1](https://github.com/user-attachments/assets/f63cd143-baa2-4a72-a503-d3f5964016e1)
-![Screenshot2](https://github.com/user-attachments/assets/004255b5-f813-43f2-91f9-65a5882e8e46)
-![Screenshot3](https://github.com/user-attachments/assets/9cdf5bc1-e257-49b4-bfda-e36741ff4742)
+  
+
+https://github.com/user-attachments/assets/a743238f-8021-4b16-847d-2dc691abf303
+![Screenshot1](https://github.com/user-attachments/assets/919f4851-a682-4c40-8f55-43cac0ae8f1d)
+![Screenshot2](https://github.com/user-attachments/assets/8130c14e-ba36-4a19-be07-07ff62716f6b)
+![Screenshot3](https://github.com/user-attachments/assets/853c9d5a-a9a9-443c-aefa-2853203b69a7)
+
+
